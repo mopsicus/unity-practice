@@ -5,8 +5,6 @@ using UnityEngine;
 /// </summary>
 public class Attack : MonoBehaviour {
 
-
-
     /// <summary>
     /// Attack damage
     /// </summary>

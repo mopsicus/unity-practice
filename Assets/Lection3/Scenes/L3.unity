@@ -1207,6 +1207,7 @@ GameObject:
   - component: {fileID: 1003390048}
   - component: {fileID: 1003390049}
   - component: {fileID: 1003390050}
+  - component: {fileID: 1003390051}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1266,6 +1267,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DemoHistory
   _counter: {fileID: 829894765}
+--- !u!114 &1003390051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003390046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b0d1ae79e2b41b3965524270562200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Score
 --- !u!1 &1043457463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _rotationSpeed: 720
+  _contactScore: 10
   _history: {fileID: 1003390050}
 --- !u!114 &1744202678
 MonoBehaviour:

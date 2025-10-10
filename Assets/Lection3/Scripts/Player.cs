@@ -13,6 +13,11 @@ public class Player : MonoBehaviour {
     const string WALL_OBJECT = "Wall";
 
     /// <summary>
+    /// NPC object name
+    /// </summary>
+    const string NPC_OBJECT = "NPC";
+
+    /// <summary>
     /// Movement speed (units/second)
     /// </summary>
     [SerializeField]
@@ -23,6 +28,12 @@ public class Player : MonoBehaviour {
     /// </summary>
     [SerializeField]
     float _rotationSpeed = 720f;
+
+    /// <summary>
+    /// Contact score for NPCs
+    /// </summary>
+    [SerializeField]
+    int _contactScore = 10;
 
     /// <summary>
     /// Reference to the demo history
@@ -83,6 +94,9 @@ public class Player : MonoBehaviour {
         Debug.Log($"[{nameof(Player).ToUpperInvariant()}] collided with: {item}");
         if (item.Equals(WALL_OBJECT)) {
             EventBus.Publish<CustomEvents>(CustomEvents.WallDetected);
+        }
+        if (item.Equals(NPC_OBJECT)) {
+            Score.Add(_contactScore);
         }
     }
 }

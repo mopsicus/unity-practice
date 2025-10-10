@@ -33,7 +33,7 @@ public class Score : MonoBehaviour {
     /// <param name="value">Value to add</param>
     public void AddScore(int value) {
         Value += value;
-        Debug.Log($"[{nameof(Score).ToUpperInvariant()}] add: {Value}");
+        Debug.Log($"[{nameof(Score).ToUpperInvariant()}] add: {value}, current: {Value}");
     }
 
     /// <summary>
