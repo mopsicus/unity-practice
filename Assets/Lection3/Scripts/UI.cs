@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,11 +36,33 @@ public class UI : MonoBehaviour {
     /// </summary>
     Transform _target = null;
 
+    Timer _timer = null;
+
     /// <summary>
     /// Initialize the health bar
     /// </summary>
     void Start() {
         _target = _bar.transform;
+        StartCoroutine(Test());
+        _timer = new Timer(1000f);
+        _timer.Elapsed += OnTimer;
+        _timer.Start();
+    }
+
+    private void OnTimer(object sender, ElapsedEventArgs e) {
+        Debug.Log(timer);
+    }
+
+    int timer = 60;
+
+    IEnumerator Test() {
+        Debug.Log("1");
+        Debug.Log("2");
+        while (timer > 0) {
+            timer--;
+            yield return new WaitForSeconds(1f);
+            Debug.Log(timer);
+        }
     }
 
     /// <summary>

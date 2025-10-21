@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "Actions",
+    "maps": [
+        {
+            "name": "HealthBar",
+            "id": "315ddc0d-e5e0-4c88-9f66-79c92262fc3d",
+            "actions": [
+                {
+                    "name": "Heal",
+                    "type": "Button",
+                    "id": "12e7a3b8-5ce2-4c91-aea2-71db09bffc27",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Damage",
+                    "type": "Button",
+                    "id": "1a2388c1-3f7c-4b4e-a084-e02cc89aa805",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5157c37f-4837-4592-8d3b-1874103a73bc",
+                    "path": "<Keyboard>/h",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a4e32c6-ad93-44a6-8f96-8573fe4afec7",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Damage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
