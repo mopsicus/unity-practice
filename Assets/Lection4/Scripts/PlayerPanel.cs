@@ -1,5 +1,6 @@
+#pragma warning disable IDE0060 
+
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using static UnityEngine.InputSystem.InputAction;
 

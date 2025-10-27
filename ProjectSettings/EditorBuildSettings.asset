@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Lection4/Scenes/L4.unity
     guid: 4e9219d936d5744cbb1c55ba7ffea6ef
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 7cef4df018b1741b3b9ea59c97b74d65, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8045805b550874f20b38fca52939bd76, type: 3}
   m_UseUCBPForAssetBundles: 0
