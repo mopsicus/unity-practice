@@ -39,15 +39,18 @@ public class Gun : MonoBehaviour {
     /// <summary>
     /// Shoot a bullet
     /// </summary>
-    public void Shoot() {
+    public bool Shoot() {
         _pool.SetPosition(transform.position + _bulletOffset);
         var obj = _pool.Get();
         if (obj != null) {
             _bullets.Push(obj);
             var body = obj.GetComponent<Rigidbody>();
+            body.linearVelocity = Vector3.zero;
             body.AddForce(transform.forward * _bulletSpeed, ForceMode.Impulse);
+            return true;
         } else {
             Debug.LogWarning($"[{nameof(Gun).ToUpperInvariant()}] no bullets, need reload, press R");
+            return false;
         }
     }
 

@@ -66,5 +66,13 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "unity-practice.slnx"
+    "dotnet.defaultSolution": "unity-practice.slnx",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.hg/store/**": true,
+        "**/.git/**": true,
+        "**/node_modules/**": true,
+        "**/.vscode/**": true
+    }
 }
